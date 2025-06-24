@@ -1,0 +1,51 @@
+/*variables for spacing*/
+body {
+  background-color: #f1f1f1;
+  margin: 0px;
+  height: 100vh;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 200px;
+}
+.cards .card:nth-child(1) {
+  width: 200px;
+  height: auto;
+  box-shadow: 0 0 10px darkcyan;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+}
+.cards .card:nth-child(1):hover {
+  background-color: plum;
+}
+.cards .card:nth-child(2) {
+  width: 200px;
+  height: auto;
+  box-shadow: 0 0 10px orange;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+}
+.cards .card:nth-child(2):hover {
+  background-color: plum;
+}
+.cards .card:nth-child(3) {
+  width: 200px;
+  height: auto;
+  box-shadow: 0 0 14px crimson;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+}
+.cards .card:nth-child(3):hover {
+  background-color: plum;
+}
+
+/*# sourceMappingURL=style.css.map */

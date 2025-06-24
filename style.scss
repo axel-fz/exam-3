@@ -1,0 +1,63 @@
+$primary-color: white;
+$secondary-color: plum;
+$border-radius: yellow;
+
+/*variables for spacing*/
+
+$top-space:200px;
+body{
+    background-color: #f1f1f1;
+    margin: 0px;
+    height: 100vh;
+
+}
+@mixin card-shadow($shadow-color:palegoldenrod, $shadow-blur-radius:10px){
+    min-width: 200px;
+    height: auto;
+    box-shadow: 0 0 $shadow-blur-radius $shadow-color ;
+    background-color: $primary-color;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+    &:hover{
+        background-color: $secondary-color;
+    }
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: $top-space;
+    .card:nth-child(1){
+        @include card-shadow(darkcyan)
+    }
+    .card:nth-child(2){
+        @include card-shadow(orange)
+      
+    }
+    .card:nth-child(3){
+        @include card-shadow(crimson, 14px)
+    }
+}
+
+@media screen and (max-width:400px){
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: $top-space;
+    .card:nth-child(1){
+        @include card-shadow(darkcyan)
+    }
+    .card:nth-child(2){
+        @include card-shadow(orange)
+      
+    }
+    .card:nth-child(3){
+        @include card-shadow(crimson, 14px)
+    }
+}
+}
